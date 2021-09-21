@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class Clase1 
+{
+	 public static void main(String[] ar) 
+	 {
+	    Scanner teclado=new Scanner(System.in);
+	    float Saldo_Cta = 0;
+	    float Saldo_Depositado=0;
+	    float Saldo_Extraccion=0;
+	    int Flag;
+	    System.out.print("Ingrese la operacion que quiere realizar 1 para depositos, 2 para extracciones:");
+	    Flag=teclado.nextInt();
+	    if (Flag==1 || Flag==2)
+	    {
+	    	if (Flag==1) 
+	    	{
+	    	    System.out.println("Cuanto dinero quiere depodepositarsitar:");
+	    	    Saldo_Depositado=teclado.nextFloat();
+	    	    Saldo_Cta=Saldo_Cta+Saldo_Depositado;
+	    	    System.out.println("Su saldo es:");
+	    	    System.out.println (Saldo_Cta);
+	    	}
+	    	
+	    		if (Flag==2) 
+	    		{
+	    			if (Saldo_Cta>=Saldo_Extraccion);
+	    		
+	    			{
+	    				System.out.println("Cuanto dinero quiere extraer:");
+	    				Saldo_Extraccion=teclado.nextFloat();
+	    				Saldo_Cta=Saldo_Cta-Saldo_Extraccion;
+	    				System.out.println("Su saldo es:/$");
+	    				System.out.println (Saldo_Cta);
+	    			}
+	    			//else  System.out.println("Su saldo de Cuenta es insuficiente, no tiene fondos suficientes");
+	    		}
+	    		
+	    		teclado.close();
+	    		return;
+	    }
+	   
+	    	 teclado.close();
+	    	 return;
+	   
+	 }
+	
+}
